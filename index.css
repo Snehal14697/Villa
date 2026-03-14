@@ -680,13 +680,16 @@ h5{
 {
     
 
+
     height:80vh;
     width:100vw;
     background-image:url(https://cdn.pixabay.com/photo/2020/04/28/04/03/villa-5102551_640.jpg);
     background-size:cover;
     background-position:center;
-    position:relative;
+    position: relative;
+    z-index:1;
 }
+
 
 
 
@@ -707,15 +710,17 @@ h5{
 
    .footer-content{
 
-   
-display:flex;
-justify-content:center;
-align-items:flex-start;
-gap:80px;
-flex-wrap:wrap;
-margin-top:60px;
-}
-    
+      
+
+    position: absolute;
+    top: 50px;        /* adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 50px;
+    z-index: 5;
+
+   }
    
   .footer-content .map p{
 
@@ -734,7 +739,11 @@ margin-top:60px;
   }
 
   .footer .map{
-width:500px;
+     height: 400px;
+    width: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+
 }
 
 
@@ -757,15 +766,12 @@ border:none;
         
 
     height: 550px;
-    width: 300px;
-    background-color:white;
+    width: 350px;
     border-radius: 25px;
     box-shadow: 3px 3px 5px grey;
-    margin-left: 10px;
-    margin-top: 280px;
     padding: 20px;
-    line-height: 50px;
-   }
+}
+   
 
    .form input{
 
