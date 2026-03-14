@@ -695,7 +695,7 @@ h5{
 
 
 .footer-bar{
-    height:100vh;
+    height:auto;
     width:100vw;
     display:flex;
     justify-content:center;
@@ -703,24 +703,27 @@ h5{
     gap:80px;
     margin-top:-350px;   
     position:relative;
+     padding-bottom: 50px;
     z-index:5;
 
 }
 
 
    .footer-content{
+    display:flex;
+    justify-content: space-around;  /* center आणि spacing */
+    align-items:flex-start;
+    gap:80px;
+    flex-wrap:wrap;
+    margin-top:40px;   /* map/form वरचा gap */
+    position: relative;  /* absolute काढा */
+}
 
-      
-
-    position: absolute;
-    top: 50px;        /* adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 50px;
-    z-index: 5;
-
-   }
+.footer-content .map {
+    height: 350px;
+    width: 500px;
+    margin: 0;
+}
    
   .footer-content .map p{
 
@@ -737,6 +740,11 @@ h5{
     color: white;
 
   }
+  .footer-content .form {
+    height: 550px;
+    width: 300px;
+    margin: 0;
+}
 
   .footer .map{
      height: 400px;
