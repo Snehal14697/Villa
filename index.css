@@ -691,10 +691,13 @@ h5{
 
 
 .footer-bar{
-    height: 100vh;
-    width: 100vw;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+gap:80px;
+flex-wrap:wrap;
+margin-top:60px;
 }
-
 
 
    .footer-content{
@@ -725,16 +728,12 @@ margin-top:60px;
 
   }
 
-  
+  .footer .map{
+width:500px;
+}
 
 
-   .footer.map{
-
-  height:300px;
-    width:350px;
-
-    
-   }
+   
 
    .footer-content .map .map-container {
 
