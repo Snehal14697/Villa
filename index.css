@@ -709,14 +709,13 @@ h5{
 }
 
 
-   .footer-content{
+   .footer-content {
     display:flex;
-    justify-content: space-around;  /* center आणि spacing */
+    justify-content:center;
     align-items:flex-start;
-    gap:80px;
-    flex-wrap:wrap;
-    margin-top:40px;   /* map/form वरचा gap */
-    position: relative;  /* absolute काढा */
+    gap:50px;          /* adjust gap as needed */
+    padding-top: 80px; /* bring content below header image */
+    flex-wrap: wrap;
 }
 
 .footer-content .map {
@@ -764,20 +763,24 @@ h5{
 
    }
    .map-container iframe{
-width:500px;
-height:350px;
-border-radius:15px;
-border:none;
+    width: 500px;
+    height: 350px;
+    border-radius:15px;
+    border:none;
 }
+
+
    
    .form{
-        
-
     height: 550px;
-    width: 350px;
+    width: 300px;
+    background-color:white;
     border-radius: 25px;
     box-shadow: 3px 3px 5px grey;
+    margin-left: 10px;
+    margin-top: 0px;  /* Change from 280px */
     padding: 20px;
+    line-height: 50px;
 }
    
 
@@ -911,9 +914,15 @@ border:none;
     height: 40vh;
     width: 100vw;
     background-color: black;
-    margin-top: 140px;
+    margin-top: 50px; /* reduce from 140px */
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:1em;
+    line-height:1.5em;
 }
-
 .task-bar p{
 padding-top: 50px;
     padding-left: 100px;
