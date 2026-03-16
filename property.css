@@ -1,318 +1,340 @@
- nav{
-    display:flex;
-    justify-content :space-evenly;
-    height:65px;
-    width:100vw;
-    background-size:cover;
-    background-color:white;
-    font-size: larger;
-    position:sticky;
-    top:0px;
-   z-index:100;
-    color:black;
-    background-color:white;
-}
-.a{
-    margin-top:15px;
-    margin-left:25px;
-    font-size: 1.5em;
-    font-weight: 500;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
-}
-nav ul{
-    font-size: 15px;
-    list-style:none;
-    display :flex;
-
-   
-}
-nav ul li{
-     margin:0 20px;
-     font-weight:700px;  
-     margin-top: 10px;
-    
-}
-
-
-nav ul li a{
-    text-decoration: none;
-}
-
-
-
- .schedule-btn {
-   display: flex; 
-   align-items: center; 
-    background-color: #1c1c1c;
-    border: none;
-    border-radius: 50px;
-    padding: 10px 20px 10px 0;
-     cursor: pointer;
-     
-      font-family: Arial, sans-serif; 
-      margin:15px;
-      } 
- .schedule-btn .icon { 
- height:6px;
- width:6px;
- background-color: #f04d23; 
- color: white;
-  padding: 15px; 
-  border-radius: 50%; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center;
-   margin-right: 10px; 
-   
-   font-size:1em;
-    } 
- .schedule-btn .text {
-     color: white ;
-     font-size: 15px; 
-     font-weight: 500;
-      }
-
-
-      
-
-
-.paragraph {
-      
-      height:30px;
-      width:150px;
-      font-weight:800;
-      background-color:white;
-      margin-top:140px;
-      margin-left:550px;
-       color:black;   
-          position:absolute;
-          padding-bottom:20px;
-          padding-left:10px;
-         z-index:1000;
-      }
-      
-      .h1{
-          
-        
-         font-weight:900;
-         
-          color:white;
-              
-       
-      }
-   #bold{
-       font-size:2em;
-       padding-left:30px;
-       top:280px;
-       margin-left:430px;
-     color:white;
-     position :absolute;
-     z-index:2000;
-   }
-   .villa-img{
-       
-      background-size: cover;
-      filter: blur(5px);
-   }
-
-
-   .multiple-div 
-{
+nav {
     display: flex;
-    flex-direction: row;
-     margin-left:  300px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 65px;
+    font-size: larger;
+    color: rgb(16, 99, 224);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
 }
 
- .multiple-div .small-div
-{
-    height: 60px;
-    width:120px;
-
-    background-color: orangered;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-top: 30px;
-    font-weight:900;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   color: aliceblue;
-   
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
 }
 
-
-.card-container1{
-    
-    display:flex;
-    flex-wrap:wrap;
-    gap:80px;
-    margin-left:100px;
-    margin-top: 40px;
-    
-    
-} 
-.card{
-    
-      height:580px;
-      width :280px;
-      background-color:whitesmoke;
-      border-radius:10px;
-      margin-top:20;
-      box-shadow: 5px 5px 5px black;
-      margin-left:30px;
-      margin-top:20px;
-}
- .card img{
-     margin-left:25px;
-     margin-top:17px;
-     padding:5px;
-     border-radius:10px;
-     
+nav ul li a {
+    text-decoration: none;
+    color: rgb(16, 99, 224);
+    transition: color 0.3s ease;
+    font-family: sans-serif;
 }
 
-.card .span-container{
-    
-     display :flex;
-     padding:10px;
-     margin-top:20px;
-     gap:25px;
-     margin-left:15px;
-    
-     
-}
-.card  .span-container span
-{
-    background-color: rgb(233, 210, 180);
-    padding-top:15px;
-    font-family:Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
- .card  .span-container p{
-    display: inline-block;
-    margin-top: 20px;
+nav ul li a:hover {
     color: orangered;
-    font-size: 20px;
-    font-weight: 600;
+    cursor: pointer;
 }
-  .card  h3{
-    margin-left: 20px;
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.orange-box1 {
+    background-color: orangered;
+    border-radius: 50%;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 5px;
+    right: 310px;
+}
+
+.orange-box1 i {
+    color: black;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+nav .span2 {
+    margin-top: 10px;
+    width: 200px;
+    background-color: black;
+    border-radius: 30px;
+    padding: 10px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+nav ul li a.active {
+    color: orangered;
+    font-weight: bold;
+}
+
+/*main page*/
+.main {
+  background-image: url('https://cdn.pixabay.com/photo/2021/08/17/23/19/mexico-6554292_1280.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 400px; 
+  position: relative;
   
 }
- .card  .text-container
-{
-   color: black;
-   margin-left: 50px;
-   line-height:25px;
-   font-size:larger;
-   gap:5px;
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
- .card button{
-    background-color: black;
-    color:aliceblue;
-    border-radius: 25px;
-    padding:6px;
-    width: 60%;
-    margin-top:20px;
+.centered-text {
+  text-align: center;
+}
+
+.breadcrumb {
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  padding: 8px 12px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: black;
+}
+
+h3 {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+/* 2nd page */
+/* Container spacing */
+.container {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Filter navigation */
+.properties-filter {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.properties-filter li a {
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.properties-filter li a:hover,
+.properties-filter li a.is_active {
+  background-color: orangered;
+}
+
+/* Property Cards */
+.properties-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  position: relative;
+  height: auto !important;
+}
+
+.properties-box .category-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+.card-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px 60px;
+}
+
+.card-container .heading {
+
+    margin-left: 500px;
+}
+
+.heading span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f35525;
+    font-size: larger;
+    margin-top: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+ .heading h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    line-height: 40px;
+    font-weight: 800;
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 40px);
+    /* 3 per row, accounting for gap */
+    max-width: 400px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+ .card img {
+    margin: 30px;
+    border-radius: 10px;
+    width: calc(100% - 60px);
+    height: auto;
+}
+
+.card .span-container {
+    display: flex;
+    gap: 40px;
     margin-left: 50px;
+}
+
+.card .span-container span {
+    background-color: rgb(233, 210, 180);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card .span-container p {
+    display: inline-block;
+    margin: 0%;
+    color: orangered;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+ .card h3 {
+    margin-left: 25px;
+    font-size: larger;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    color: #222;
+    margin-top:10px;
+
+}
+
+.card ul li {
+    margin-right: 10px;
+    font-size: 21px;
+    list-style: none;
+    display: inline-block;
+    gap: 30px;
+    color: gray;
+}
+
+.card ul li span {
+    color: black;
+    font-weight: 600;
+}
+
+ .hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 10px 0;
+}
+
+ .card button {
+    background-color: black;
+    color: aliceblue;
+    border-radius: 25px;
+    padding: 6px;
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 60px;
     text-decoration: none;
     box-shadow: 3px 3px 3px gray;
-    font-size:1em;
 
 
 }
 
+ .card button:hover {
+    background-color: rgb(237, 99, 49);
+    box-shadow: 3px 3px 3px gray;
 
-.card button:hover{
+}
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0;
+  list-style: none;
+}
 
-    background-color: #f04d23;
+.pagination li a {
+  background-color: #222;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
+.pagination li a.is_active,
+.pagination li a:hover {
+  background-color: orangered;
+}
+.category-box {
+  display: none;
+}
+
+:target {
+  display: block;
+}
+
+/* Fallback to show all if no anchor is selected */
+.properties-box > :first-child:target ~ .category-box,
+.properties-box:not(:has(:target)) > .category-box:first-child {
+  display: block;
+}
+.last-part{
+    width: 100vw;
+    height: 150px;
+    background-color: black;
+}
+
+.last-part h3 {
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+  padding-top: 30px;
 
 }
 
-
-
-.circle{
-         height: 35px;
-         width: 35px;
-         background-color: rgb(15, 15, 15);
-         margin-top: 48px;
-         margin-left: 50px;
-         border-radius: 50%;
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-         justify-content: center;
-         color: white;
-
-    
-}
-
-   .circle :hover{
-      height:17px;
-      width: 25px;
-      margin-bottom: 5px;
-
-      background-color: #f04d23;
-      border-radius: 50%;
-
-
-  }
-
-
-
-
-   .circle #number{
-
-
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          padding: 10px;
-        margin-top: 5px;
-        
-}
-
-
-  .circle #number2{
-
-
-          display: flex;
-          align-items: center;
-          padding: 10px;
-        margin-top: 5px;
-        
-}
-   
-
-.circle #number3{
-
-
-          display: flex;
-          align-items: center;
-          padding: 10px;
-        margin-top: 5px;
-        
-}
-
-
-.circle #number4{
-
-
-          display: flex;
-          align-items: center;
-          padding: 10px;
-        margin-top: 5px;
-        
-}
-
-.all-content{
-
-
-    display: flex;
-    margin-left: 470px;
-}
